@@ -10,9 +10,9 @@ public class ShapeTest {
 		
 		list.add( new Rectangle(5, 6) );
 		list.add( new RectTriangle( 6, 2) );
-		
+		 
 		for( Shape shape : list ) {
-			System.out.println( "area:" + shape.getArea() );
+			System.out.println( "area:" + shape.getArea() ); 
 			System.out.println( "perimeter:" + shape.getPerimeter() );
 			
 			if( shape instanceof Resizable ) {

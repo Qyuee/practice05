@@ -14,4 +14,4 @@ public class Prob2 {
 		bird02.sing();
 		System.out.println( bird02 );
 	}
-}
+} 
