@@ -37,15 +37,12 @@ public class MyStack {
 	}
 	
 	public String pop() throws MyStackException {
-		
 		if(this.isEmpty()==false) {
 			String pop_str=this.buffer[top];
 			top--;
 			return pop_str;
 		}
-		
 		throw new MyStackException("Stack is empty");
-		
 	}
 	
 	public boolean isEmpty(){
@@ -67,7 +64,6 @@ public class MyStack {
 	public void resize(String[] ex_stack) {
 		this.index=top+3;
 		this.buffer=new String[this.index];
-		//System.out.println(buffer.length);
 		for(int i=0; i<ex_stack.length; i++) {
 			buffer[i]=ex_stack[i];
 		}
